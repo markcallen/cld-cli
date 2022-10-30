@@ -20,7 +20,7 @@ $ npm install -g cld-cli
 $ cld COMMAND
 running command...
 $ cld (--version)
-cld-cli/0.2.1 darwin-x64 node-v16.17.0
+cld-cli/0.2.2 darwin-x64 node-v16.17.0
 $ cld --help [COMMAND]
 USAGE
   $ cld COMMAND
@@ -64,7 +64,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/markcallen/cld-cli/blob/v0.2.1/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/markcallen/cld-cli/blob/v0.2.2/dist/commands/hello/index.ts)_
 
 ## `cld hello world`
 
@@ -330,11 +330,5 @@ FLAGS
 
 DESCRIPTION
   Update installed plugins.
-```
-
-## Release
-
-```
-npm version patch -m "comment"
 ```
 <!-- commandsstop -->
