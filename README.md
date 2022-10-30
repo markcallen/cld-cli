@@ -1,10 +1,10 @@
-oclif-hello-world
+cld-cli
 =================
 
-oclif example Hello World CLI
+cld CLI - managing cloud resources from the command-line
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/oclif-hello-world.svg)](https://npmjs.org/package/cld-cli)
+[![Version](https://img.shields.io/npm/v/cld-cli.svg)](https://npmjs.org/package/cld-cli)
 [![CircleCI](https://circleci.com/gh/oclif/hello-world/tree/main.svg?style=shield)](https://circleci.com/gh/oclif/hello-world/tree/main)
 [![Downloads/week](https://img.shields.io/npm/dw/oclif-hello-world.svg)](https://npmjs.org/package/cld-cli)
 [![License](https://img.shields.io/npm/l/oclif-hello-world.svg)](https://github.com/markcallen/cld-cli)
