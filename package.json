@@ -7,7 +7,7 @@
     "cld": "./bin/run"
   },
   "homepage": "https://github.com/markcallen/cld-cli",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "repository": "markcallen/cld-cli",
   "files": [
