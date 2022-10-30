@@ -331,4 +331,10 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
+## Release
+
+```
+npm version patch -m "comment"
+```
 <!-- commandsstop -->

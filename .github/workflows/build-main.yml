@@ -14,9 +14,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: tag Commit
-        run: make git-tag
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
