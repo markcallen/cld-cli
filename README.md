@@ -6,6 +6,7 @@ cld CLI - managing cloud resources from the command-line
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/cld-cli.svg)](https://npmjs.org/package/cld-cli)
 [![build](https://img.shields.io/github/workflow/status/markcallen/cld-cli/build-main.svg)](https://circleci.com/gh/oclif/hello-world/tree/main)
+![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/markcallen/cld-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/cld-cli.svg)](https://npmjs.org/package/cld-cli)
 [![License](https://img.shields.io/npm/l/cld-cli.svg)](https://github.com/markcallen/cld-cli/blob/main/LICENSE)
 
