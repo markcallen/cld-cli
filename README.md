@@ -6,8 +6,9 @@ cld CLI - managing cloud resources from the command-line
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/cld-cli.svg)](https://npmjs.org/package/cld-cli)
 [![build](https://img.shields.io/github/workflow/status/markcallen/cld-cli/build-main.svg)](https://circleci.com/gh/oclif/hello-world/tree/main)
+![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/markcallen/cld-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/cld-cli.svg)](https://npmjs.org/package/cld-cli)
-[![License](https://img.shields.io/npm/l/cld-cli.svg)](https://github.com/markcallen/cld-cli)
+[![License](https://img.shields.io/npm/l/cld-cli.svg)](https://github.com/markcallen/cld-cli/blob/main/LICENSE)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -29,8 +30,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`cld hello PERSON`](#cld-hello-person)
-* [`cld hello world`](#cld-hello-world)
+* [`cld aws`](#cld-aws)
+* [`cld aws whoami`](#cld-aws-whoami)
 * [`cld help [COMMAND]`](#cld-help-command)
 * [`cld plugins`](#cld-plugins)
 * [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
@@ -42,44 +43,41 @@ USAGE
 * [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
 * [`cld plugins update`](#cld-plugins-update)
 
-## `cld hello PERSON`
+## `cld aws`
 
-Say hello
-
-```
-USAGE
-  $ cld hello [PERSON] -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Whom is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [dist/commands/hello/index.ts](https://github.com/markcallen/cld-cli/blob/v0.2.2/dist/commands/hello/index.ts)_
-
-## `cld hello world`
-
-Say hello world
+aws credentials
 
 ```
 USAGE
-  $ cld hello world
+  $ cld aws
 
 DESCRIPTION
-  Say hello world
+  AWS quick utilities
 
 EXAMPLES
-  $ cld hello world
-  hello world! (./src/commands/hello/world.ts)
+  $ cld aws
+  AWS_ACCESS_KEY_ID=A***************1111
+  AWS_SECRET_ACCESS_KEY=Z***********************************zzzz
+  or
+  AWS_PROFILE=work
+
+```
+
+_See code: [dist/commands/aws/index.ts](https://github.com/markcallen/cld-cli/blob/v0.2.2/dist/commands/aws/index.ts)_
+
+## `cld aws whoami`
+
+get Caller Identity
+
+```
+USAGE
+  $ cld aws whoami
+
+EXAMPLES
+  $ cld aws whoami
+  UserId: Axxxxxxxxxxxxxxxxxxxx
+  Account: 111111111111
+  Arn: arn:aws:iam::111111111111:user/cld-cli
 ```
 
 ## `cld help [COMMAND]`
