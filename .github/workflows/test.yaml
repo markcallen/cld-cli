@@ -28,3 +28,5 @@ jobs:
 
       - name: Run Tests
         run: npm run test
+        env:
+          AWS_SDK_LOAD_CONFIG: 1
