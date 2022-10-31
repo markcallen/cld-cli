@@ -5,7 +5,7 @@ describe('aws', () => {
   .stdout()
   .command(['aws'])
   .it('runs aws cmd', ctx => {
-    expect(ctx.stdout).to.contain('AWS_PROFILE')
+    expect(ctx.stdout).to.contain('AWS_ACCESS_KEY_ID')
   })
 })
 
