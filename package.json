@@ -19,7 +19,7 @@
   "dependencies": {
     "@oclif/core": "^1.20.0",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.1.6",
+    "@oclif/plugin-plugins": "^2.1.7",
     "aws-sdk": "^2.1243.0"
   },
   "devDependencies": {
