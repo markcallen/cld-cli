@@ -459,75 +459,7 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^1.18.0":
-  version "1.19.2"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.19.2.tgz#847b1c502ff8a91b834b8c893f0942a5d95e3b64"
-  integrity sha512-n5ni/NNR6+I0IQXVGoLKdrdw6IS3WH/R/hw6WX8ERfLMZACrNSuJFD9EmBZkztyRkmiQ2L06ULazW5bJn5Shog==
-  dependencies:
-    "@oclif/linewrap" "^1.0.0"
-    "@oclif/screen" "^3.0.2"
-    ansi-escapes "^4.3.2"
-    ansi-styles "^4.3.0"
-    cardinal "^2.1.1"
-    chalk "^4.1.2"
-    clean-stack "^3.0.1"
-    cli-progress "^3.10.0"
-    debug "^4.3.4"
-    ejs "^3.1.6"
-    fs-extra "^9.1.0"
-    get-package-type "^0.1.0"
-    globby "^11.1.0"
-    hyperlinker "^1.0.0"
-    indent-string "^4.0.0"
-    is-wsl "^2.2.0"
-    js-yaml "^3.14.1"
-    natural-orderby "^2.0.3"
-    object-treeify "^1.1.33"
-    password-prompt "^1.1.2"
-    semver "^7.3.7"
-    string-width "^4.2.3"
-    strip-ansi "^6.0.1"
-    supports-color "^8.1.1"
-    supports-hyperlinks "^2.2.0"
-    tslib "^2.3.1"
-    widest-line "^3.1.0"
-    wrap-ansi "^7.0.0"
-
-"@oclif/core@^1.19.1", "@oclif/core@^1.20.0":
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.20.0.tgz#04a37b66cedeeb21630b91095466641bc499f706"
-  integrity sha512-yByf6w5JOFsbIeyYEF8rSbvN4uCI/7O9lGNg0kY0N+HH6edtpCtGHe6p/4+5yPNEmGL6P8IEKi+9s0Ys774mgw==
-  dependencies:
-    "@oclif/linewrap" "^1.0.0"
-    "@oclif/screen" "^3.0.2"
-    ansi-escapes "^4.3.2"
-    ansi-styles "^4.3.0"
-    cardinal "^2.1.1"
-    chalk "^4.1.2"
-    clean-stack "^3.0.1"
-    cli-progress "^3.10.0"
-    debug "^4.3.4"
-    ejs "^3.1.6"
-    fs-extra "^9.1.0"
-    get-package-type "^0.1.0"
-    globby "^11.1.0"
-    hyperlinker "^1.0.0"
-    indent-string "^4.0.0"
-    is-wsl "^2.2.0"
-    js-yaml "^3.14.1"
-    natural-orderby "^2.0.3"
-    object-treeify "^1.1.33"
-    password-prompt "^1.1.2"
-    semver "^7.3.7"
-    string-width "^4.2.3"
-    strip-ansi "^6.0.1"
-    supports-color "^8.1.1"
-    supports-hyperlinks "^2.2.0"
-    tslib "^2.3.1"
-    widest-line "^3.1.0"
-    wrap-ansi "^7.0.0"
-
-"@oclif/core@^1.20.2":
+"@oclif/core@^1.18.0", "@oclif/core@^1.19.1", "@oclif/core@^1.20.0", "@oclif/core@^1.20.2", "@oclif/core@^1.20.4":
   version "1.20.4"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.20.4.tgz#7378b52e1f1b502e383ffb07f95dffc9fd8588ff"
   integrity sha512-giug32M4YhSYNYKQwE1L57/+k5gp1+Bq3/0vKNQmzAY1tizFGhvBJc6GIRZasHjU+xtZLutQvrVrJo7chX3hxg==
@@ -613,23 +545,18 @@
     lodash "^4.17.21"
     semver "^7.3.8"
 
-"@oclif/screen@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-3.0.2.tgz#969054308fe98d130c02844a45cc792199b75670"
-  integrity sha512-S/SF/XYJeevwIgHFmVDAFRUvM3m+OjhvCAYMk78ZJQCYCQ5wS7j+LTt1ZEv2jpEEGg2tx/F6TYYWxddNAYHrFQ==
-
 "@oclif/screen@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@oclif/screen/-/screen-3.0.3.tgz#e679ad10535e31d333f809f7a71335cc9aef1e55"
   integrity sha512-KX8gMYA9ujBPOd1HFsV9e0iEx7Uoj8AG/3YsW4TtWQTg4lJvr82qNm7o/cFQfYRIt+jw7Ew/4oL4A22zOT+IRA==
 
 "@oclif/test@^2":
-  version "2.2.6"
-  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-2.2.6.tgz#2c98bb1ecab3ddf6b01b51f8a3489c9105353d67"
-  integrity sha512-rf67rTBkEeulpomdeBYm0D+Q0e1uMqTPUNPhY2/G6guAJhmu3M+78HvSKpLdG7WqpbfQJ68D5Dh5HnauO+MY2g==
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/@oclif/test/-/test-2.2.12.tgz#bb97a8c678b349e0e323013be67d68f619e6aaf2"
+  integrity sha512-6s1XwvBTXHdVjVZY/qDgMl74NVvoy8MQoknqT/YfR9K3P/6fPW4xeZqemtvrvU4heM5kzSShta5sk0I28MXHMg==
   dependencies:
-    "@oclif/core" "^1.19.1"
-    fancy-test "^2.0.5"
+    "@oclif/core" "^1.20.4"
+    fancy-test "^2.0.7"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
@@ -2184,10 +2111,10 @@ external-editor@^3.0.3:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
-fancy-test@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-2.0.5.tgz#eb39e10b77e476147aa4ed5a81e14e809b46aaae"
-  integrity sha512-ASPLNVkHSSIdRI/uLlK+XGhf1ul/MpRN9VE84ehXL+FOprQjXrDXX3wW1wqKvtcTTC+AW0E0RxdpJ5IEopjhQA==
+fancy-test@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/fancy-test/-/fancy-test-2.0.7.tgz#a5e8e23113384c5550914da4f429d10822622521"
+  integrity sha512-E9qiHMi/Wf3y0PLwoRbgr8SRTcvQY+6gx9d/qaVNT6N5AQ79iZr08ftY2Ki5KRC5LS02GoVD/CYT4t/KwwC/Pw==
   dependencies:
     "@types/chai" "*"
     "@types/lodash" "*"
