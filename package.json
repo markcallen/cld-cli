@@ -20,7 +20,7 @@
     "@oclif/core": "^1.26.1",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.3.0",
-    "aws-sdk": "^2.1306.0"
+    "aws-sdk": "^2.1309.0"
   },
   "devDependencies": {
     "@oclif/test": "^2",
@@ -36,8 +36,8 @@
     "oclif": "^3",
     "shx": "^0.3.3",
     "ts-node": "^10.9.1",
-    "tslib": "^2.4.1",
-    "typescript": "^4.9.4"
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
   },
   "oclif": {
     "bin": "cld",
