@@ -5,7 +5,7 @@ export default class Aws extends Command {
   static description = 'AWS quick utilities';
 
   static examples = [
-    `$ cld aws 
+    `$ <%= config.bin %> <%= command.id %>
 AWS_ACCESS_KEY_ID=A***************1111
 AWS_SECRET_ACCESS_KEY=Z***********************************zzzz
 or
