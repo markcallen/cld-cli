@@ -39,6 +39,8 @@ USAGE
 
 - [`cld aws`](#cld-aws)
 - [`cld aws whoami`](#cld-aws-whoami)
+- [`cld aws-cld`](#cld-aws-cld)
+- [`cld aws-cld bootstrap`](#cld-aws-cld-bootstrap)
 - [`cld help [COMMAND]`](#cld-help-command)
 - [`cld plugins`](#cld-plugins)
 - [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
@@ -86,6 +88,14 @@ EXAMPLES
   Account: 111111111111
   Arn: arn:aws:iam::111111111111:user/cld-cli
 ```
+
+## `cld aws-cld`
+
+info about aws-cld
+
+## `cld aws-cld bootstrap`
+
+Creates the directories and bootstraps into using aws-cld
 
 ## `cld help [COMMAND]`
 
@@ -338,6 +348,13 @@ DESCRIPTION
 ```
 
 <!-- commandsstop -->
+
+## Release
+
+```
+npm version (major|minor|patch)
+npm publish
+```
 
 ## Development
 
