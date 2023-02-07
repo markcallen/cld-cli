@@ -1,11 +1,10 @@
-import {expect, test} from '@oclif/test'
+import { expect, test } from '@oclif/test';
 
 describe('aws', () => {
   test
-  .stdout()
-  .command(['aws'])
-  .it('runs aws cmd', ctx => {
-    expect(ctx.stdout).to.contain('AWS_ACCESS_KEY_ID')
-  })
-})
-
+    .stdout()
+    .command(['aws'])
+    .it('runs aws cmd', (ctx) => {
+      expect(ctx.stdout).to.contain('AWS_ACCESS_KEY_ID');
+    });
+});
