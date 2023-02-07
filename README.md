@@ -349,6 +349,13 @@ DESCRIPTION
 
 <!-- commandsstop -->
 
+## Release
+
+```
+npm version (major|minor|patch)
+npm publish
+```
+
 ## Development
 
 ### Setup
