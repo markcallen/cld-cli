@@ -1,18 +1,5 @@
 import { Command } from '@oclif/core';
-
-const replaceWithAstrisk = (str: string | undefined) => {
-  if (str) {
-    return [...str]
-      .map((e, i) => {
-        if (i > 0 && i < str.length - 4) {
-          return '*';
-        }
-
-        return e;
-      })
-      .join('');
-  }
-};
+import { replaceWithAstrisk } from '../../utils';
 
 export default class Aws extends Command {
   static description = 'AWS quick utilities';
@@ -34,7 +21,7 @@ AWS_PROFILE=work
       AWS_ACCESS_KEY_ID: awsAccessKeyId,
       AWS_SECRET_ACCESS_KEY: awsSecretAccessKey
     } = process.env;
-    if (awsAccessKeyId) {
+    if (awsAccessKeyId && awsSecretAccessKey) {
       this.log(`AWS_ACCESS_KEY_ID=${replaceWithAstrisk(awsAccessKeyId)}`);
       this.log(
         `AWS_SECRET_ACCESS_KEY=${replaceWithAstrisk(awsSecretAccessKey)}`
