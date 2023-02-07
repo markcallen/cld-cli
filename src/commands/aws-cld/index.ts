@@ -5,10 +5,13 @@ export default class AwsCld extends Command {
 
   static examples = [
     `$ <%= config.bin %> <%= command.id %>
+aws-cld
 `
   ];
 
   async run(): Promise<void> {
     await this.parse(AwsCld);
+
+    this.log('aws-cld');
   }
 }
