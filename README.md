@@ -1,5 +1,4 @@
-cld-cli
-=================
+# cld-cli
 
 cld CLI - managing cloud resources from the command-line
 
@@ -11,11 +10,15 @@ cld CLI - managing cloud resources from the command-line
 [![License](https://img.shields.io/npm/l/cld-cli.svg)](https://github.com/markcallen/cld-cli/blob/main/LICENSE)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
+
 # Usage
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g cld-cli
 $ cld COMMAND
@@ -27,21 +30,25 @@ USAGE
   $ cld COMMAND
 ...
 ```
+
 <!-- usagestop -->
+
 # Commands
+
 <!-- commands -->
-* [`cld aws`](#cld-aws)
-* [`cld aws whoami`](#cld-aws-whoami)
-* [`cld help [COMMAND]`](#cld-help-command)
-* [`cld plugins`](#cld-plugins)
-* [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
-* [`cld plugins:inspect PLUGIN...`](#cld-pluginsinspect-plugin)
-* [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin-1)
-* [`cld plugins:link PLUGIN`](#cld-pluginslink-plugin)
-* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin)
-* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-1)
-* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
-* [`cld plugins update`](#cld-plugins-update)
+
+- [`cld aws`](#cld-aws)
+- [`cld aws whoami`](#cld-aws-whoami)
+- [`cld help [COMMAND]`](#cld-help-command)
+- [`cld plugins`](#cld-plugins)
+- [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
+- [`cld plugins:inspect PLUGIN...`](#cld-pluginsinspect-plugin)
+- [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin-1)
+- [`cld plugins:link PLUGIN`](#cld-pluginslink-plugin)
+- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin)
+- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-1)
+- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
+- [`cld plugins update`](#cld-plugins-update)
 
 ## `cld aws`
 
@@ -151,7 +158,7 @@ ALIASES
   $ cld plugins add
 
 EXAMPLES
-  $ cld plugins:install myplugin 
+  $ cld plugins:install myplugin
 
   $ cld plugins:install https://github.com/someuser/someplugin
 
@@ -211,7 +218,7 @@ ALIASES
   $ cld plugins add
 
 EXAMPLES
-  $ cld plugins:install myplugin 
+  $ cld plugins:install myplugin
 
   $ cld plugins:install https://github.com/someuser/someplugin
 
@@ -329,4 +336,31 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
 <!-- commandsstop -->
+
+## Development
+
+### Setup
+
+Install node
+
+```
+nvm use
+```
+
+### Running
+
+Use `bin/dev` instead of cld directory
+
+```
+bin/dev aws --help
+```
+
+## Testing
+
+Tests are written using mocha
+
+```
+yarn test
+```
