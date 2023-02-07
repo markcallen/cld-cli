@@ -10,73 +10,65 @@ cld CLI - managing cloud resources from the command-line
 [![License](https://img.shields.io/npm/l/cld-cli.svg)](https://github.com/markcallen/cld-cli/blob/main/LICENSE)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [cld-cli](#cld-cli)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g cld-cli
 $ cld COMMAND
 running command...
 $ cld (--version)
-cld-cli/0.2.2 darwin-x64 node-v16.17.0
+cld-cli/0.3.0 darwin-x64 node-v18.14.0
 $ cld --help [COMMAND]
 USAGE
   $ cld COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
+* [`cld aws-cld`](#cld-aws-cld)
+* [`cld aws whoami`](#cld-aws-whoami)
+* [`cld help [COMMANDS]`](#cld-help-commands)
+* [`cld plugins`](#cld-plugins)
+* [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
+* [`cld plugins:inspect PLUGIN...`](#cld-pluginsinspect-plugin)
+* [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin-1)
+* [`cld plugins:link PLUGIN`](#cld-pluginslink-plugin)
+* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin)
+* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-1)
+* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
+* [`cld plugins update`](#cld-plugins-update)
 
-- [`cld aws`](#cld-aws)
-- [`cld aws whoami`](#cld-aws-whoami)
-- [`cld aws-cld`](#cld-aws-cld)
-- [`cld aws-cld bootstrap`](#cld-aws-cld-bootstrap)
-- [`cld help [COMMAND]`](#cld-help-command)
-- [`cld plugins`](#cld-plugins)
-- [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
-- [`cld plugins:inspect PLUGIN...`](#cld-pluginsinspect-plugin)
-- [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin-1)
-- [`cld plugins:link PLUGIN`](#cld-pluginslink-plugin)
-- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin)
-- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-1)
-- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
-- [`cld plugins update`](#cld-plugins-update)
+## `cld aws-cld`
 
-## `cld aws`
-
-aws credentials
+AWS quick utilities
 
 ```
 USAGE
-  $ cld aws
+  $ cld aws-cld
 
 DESCRIPTION
   AWS quick utilities
 
 EXAMPLES
-  $ cld aws
+  $ cld aws 
   AWS_ACCESS_KEY_ID=A***************1111
   AWS_SECRET_ACCESS_KEY=Z***********************************zzzz
   or
   AWS_PROFILE=work
-
 ```
 
-_See code: [dist/commands/aws/index.ts](https://github.com/markcallen/cld-cli/blob/v0.2.2/dist/commands/aws/index.ts)_
+_See code: [dist/commands/aws-cld/index.ts](https://github.com/markcallen/cld-cli/blob/v0.3.0/dist/commands/aws-cld/index.ts)_
 
 ## `cld aws whoami`
-
-get Caller Identity
 
 ```
 USAGE
@@ -89,24 +81,16 @@ EXAMPLES
   Arn: arn:aws:iam::111111111111:user/cld-cli
 ```
 
-## `cld aws-cld`
-
-info about aws-cld
-
-## `cld aws-cld bootstrap`
-
-Creates the directories and bootstraps into using aws-cld
-
-## `cld help [COMMAND]`
+## `cld help [COMMANDS]`
 
 Display help for cld.
 
 ```
 USAGE
-  $ cld help [COMMAND] [-n]
+  $ cld help [COMMANDS] [-n]
 
 ARGUMENTS
-  COMMAND  Command to show help for.
+  COMMANDS  Command to show help for.
 
 FLAGS
   -n, --nested-commands  Include all nested commands in the output.
@@ -115,7 +99,7 @@ DESCRIPTION
   Display help for cld.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.16/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.4/src/commands/help.ts)_
 
 ## `cld plugins`
 
@@ -135,7 +119,7 @@ EXAMPLES
   $ cld plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.1.6/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.3.0/src/commands/plugins/index.ts)_
 
 ## `cld plugins:install PLUGIN...`
 
@@ -168,7 +152,7 @@ ALIASES
   $ cld plugins add
 
 EXAMPLES
-  $ cld plugins:install myplugin
+  $ cld plugins:install myplugin 
 
   $ cld plugins:install https://github.com/someuser/someplugin
 
@@ -189,6 +173,9 @@ ARGUMENTS
 FLAGS
   -h, --help     Show CLI help.
   -v, --verbose
+
+GLOBAL FLAGS
+  --json  Format output as json.
 
 DESCRIPTION
   Displays installation properties of a plugin.
@@ -228,7 +215,7 @@ ALIASES
   $ cld plugins add
 
 EXAMPLES
-  $ cld plugins:install myplugin
+  $ cld plugins:install myplugin 
 
   $ cld plugins:install https://github.com/someuser/someplugin
 
@@ -346,7 +333,6 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
-
 <!-- commandsstop -->
 
 ## Release
