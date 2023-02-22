@@ -10,14 +10,16 @@ cld CLI - managing cloud resources from the command-line
 [![License](https://img.shields.io/npm/l/cld-cli.svg)](https://github.com/markcallen/cld-cli/blob/main/LICENSE)
 
 <!-- toc -->
-* [cld-cli](#cld-cli)
-* [Usage](#usage)
-* [Commands](#commands)
+
+- [cld-cli](#cld-cli)
+- [Usage](#usage)
+- [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g cld-cli
 $ cld COMMAND
@@ -29,23 +31,48 @@ USAGE
   $ cld COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`cld aws-cld`](#cld-aws-cld)
-* [`cld aws whoami`](#cld-aws-whoami)
-* [`cld help [COMMANDS]`](#cld-help-commands)
-* [`cld plugins`](#cld-plugins)
-* [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
-* [`cld plugins:inspect PLUGIN...`](#cld-pluginsinspect-plugin)
-* [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin-1)
-* [`cld plugins:link PLUGIN`](#cld-pluginslink-plugin)
-* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin)
-* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-1)
-* [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
-* [`cld plugins update`](#cld-plugins-update)
+
+- [`cld aws`](#cld-aws)
+- [`cld aws-cld`](#cld-aws-cld)
+- [`cld aws-cld bootstrap`](#cld-aws-cld-bootstrap)
+- [`cld aws whoami`](#cld-aws-whoami)
+- [`cld help [COMMANDS]`](#cld-help-commands)
+- [`cld plugins`](#cld-plugins)
+- [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
+- [`cld plugins:inspect PLUGIN...`](#cld-pluginsinspect-plugin)
+- [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin-1)
+- [`cld plugins:link PLUGIN`](#cld-pluginslink-plugin)
+- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin)
+- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-1)
+- [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
+- [`cld plugins update`](#cld-plugins-update)
+
+## `cld aws`
+
+AWS quick utilities
+
+```
+USAGE
+  $ cld aws
+
+DESCRIPTION
+  AWS quick utilities
+
+EXAMPLES
+  $ cld aws
+  AWS_ACCESS_KEY_ID=A***************1111
+  AWS_SECRET_ACCESS_KEY=Z***********************************zzzz
+  or
+  AWS_PROFILE=work
+```
+
+_See code: [dist/commands/aws/index.ts](https://github.com/markcallen/cld-cli/blob/v0.3.0/dist/commands/aws/index.ts)_
 
 ## `cld aws-cld`
 
@@ -59,14 +86,30 @@ DESCRIPTION
   AWS quick utilities
 
 EXAMPLES
-  $ cld aws 
-  AWS_ACCESS_KEY_ID=A***************1111
-  AWS_SECRET_ACCESS_KEY=Z***********************************zzzz
-  or
-  AWS_PROFILE=work
+  $ cld aws-cld
+  aws-cld
 ```
 
 _See code: [dist/commands/aws-cld/index.ts](https://github.com/markcallen/cld-cli/blob/v0.3.0/dist/commands/aws-cld/index.ts)_
+
+## `cld aws-cld bootstrap`
+
+AWS quick utilities
+
+```
+USAGE
+  $ cld aws-cld bootstrap -d <value> -p <value>
+
+FLAGS
+  -d, --directory=<value>  (required)
+  -p, --project=<value>    (required)
+
+DESCRIPTION
+  AWS quick utilities
+
+EXAMPLES
+  $ cld aws-cld bootstrap
+```
 
 ## `cld aws whoami`
 
@@ -152,7 +195,7 @@ ALIASES
   $ cld plugins add
 
 EXAMPLES
-  $ cld plugins:install myplugin 
+  $ cld plugins:install myplugin
 
   $ cld plugins:install https://github.com/someuser/someplugin
 
@@ -215,7 +258,7 @@ ALIASES
   $ cld plugins add
 
 EXAMPLES
-  $ cld plugins:install myplugin 
+  $ cld plugins:install myplugin
 
   $ cld plugins:install https://github.com/someuser/someplugin
 
@@ -333,6 +376,7 @@ FLAGS
 DESCRIPTION
   Update installed plugins.
 ```
+
 <!-- commandsstop -->
 
 ## Release
@@ -367,3 +411,13 @@ Tests are written using mocha
 ```
 yarn test
 ```
+
+## License
+
+Distributed under the Apache-2.0 License. See `LICENSE` for more information.
+
+## Contact
+
+Your Name - [@markcallen](https://mastodon.social/@markcallen) - mark@markcallen.com
+
+Project Link: [https://github.com/markcallen/cld-cli](https://github.com/markcallen/cld-cli)
