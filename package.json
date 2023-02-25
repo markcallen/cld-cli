@@ -76,6 +76,7 @@
     "prettier": "npx prettier --config .prettierrc --check .",
     "prettier:fix": "npx prettier --config .prettierrc --write .",
     "release": "release-it",
+    "publish": "release-it --no-increment --no-increment --no-git --github.release --npm.publish",
     "prepare": "husky install"
   },
   "engines": {
