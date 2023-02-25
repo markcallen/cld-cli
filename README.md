@@ -25,7 +25,7 @@ $ npm install -g cld-cli
 $ cld COMMAND
 running command...
 $ cld (--version)
-cld-cli/0.3.0 darwin-x64 node-v18.14.0
+cld-cli/0.3.1 linux-x64 node-v16.13.0
 $ cld --help [COMMAND]
 USAGE
   $ cld COMMAND
@@ -38,10 +38,6 @@ USAGE
 
 <!-- commands -->
 
-- [`cld aws`](#cld-aws)
-- [`cld aws-cld`](#cld-aws-cld)
-- [`cld aws-cld bootstrap`](#cld-aws-cld-bootstrap)
-- [`cld aws whoami`](#cld-aws-whoami)
 - [`cld help [COMMANDS]`](#cld-help-commands)
 - [`cld plugins`](#cld-plugins)
 - [`cld plugins:install PLUGIN...`](#cld-pluginsinstall-plugin)
@@ -52,77 +48,6 @@ USAGE
 - [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-1)
 - [`cld plugins:uninstall PLUGIN...`](#cld-pluginsuninstall-plugin-2)
 - [`cld plugins update`](#cld-plugins-update)
-
-## `cld aws`
-
-AWS quick utilities
-
-```
-USAGE
-  $ cld aws
-
-DESCRIPTION
-  AWS quick utilities
-
-EXAMPLES
-  $ cld aws
-  AWS_ACCESS_KEY_ID=A***************1111
-  AWS_SECRET_ACCESS_KEY=Z***********************************zzzz
-  or
-  AWS_PROFILE=work
-```
-
-_See code: [dist/commands/aws/index.ts](https://github.com/markcallen/cld-cli/blob/v0.3.0/dist/commands/aws/index.ts)_
-
-## `cld aws-cld`
-
-AWS quick utilities
-
-```
-USAGE
-  $ cld aws-cld
-
-DESCRIPTION
-  AWS quick utilities
-
-EXAMPLES
-  $ cld aws-cld
-  aws-cld
-```
-
-_See code: [dist/commands/aws-cld/index.ts](https://github.com/markcallen/cld-cli/blob/v0.3.0/dist/commands/aws-cld/index.ts)_
-
-## `cld aws-cld bootstrap`
-
-AWS quick utilities
-
-```
-USAGE
-  $ cld aws-cld bootstrap -d <value> -p <value>
-
-FLAGS
-  -d, --directory=<value>  (required)
-  -p, --project=<value>    (required)
-
-DESCRIPTION
-  AWS quick utilities
-
-EXAMPLES
-  $ cld aws-cld bootstrap
-```
-
-## `cld aws whoami`
-
-```
-USAGE
-  $ cld aws whoami
-
-EXAMPLES
-  $ cld aws whoami
-  UserId: Axxxxxxxxxxxxxxxxxxxx
-  Account: 111111111111
-  Arn: arn:aws:iam::111111111111:user/cld-cli
-```
 
 ## `cld help [COMMANDS]`
 
