@@ -25,7 +25,7 @@ $ npm install -g cld-cli
 $ cld COMMAND
 running command...
 $ cld (--version)
-cld-cli/0.3.5 linux-x64 node-v16.13.0
+cld-cli/0.3.6 linux-x64 node-v16.13.0
 $ cld --help [COMMAND]
 USAGE
   $ cld COMMAND
