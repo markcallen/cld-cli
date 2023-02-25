@@ -14,11 +14,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: git config
-        run: |
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -26,11 +21,6 @@ jobs:
 
       - name: Install Node.js dependencies
         run: yarn
-
-      - name: Update version
-        run: npm run release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
