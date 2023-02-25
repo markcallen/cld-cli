@@ -306,18 +306,14 @@ DESCRIPTION
 
 ## Releases and Publishing to npmjs
 
-Using release-it for releases. The build-main github action will create a new patch version on merge to main.
+Using release-it for releases.
+
+To do a release run the Github Release workflow on main.
 
 To to a minor (or major) vesion change run
 
 ```
 npm run release -- minor --ci
-```
-
-To publish to npmjs run
-
-```
-npm publish
 ```
 
 ## Development
