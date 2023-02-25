@@ -379,10 +379,19 @@ DESCRIPTION
 
 <!-- commandsstop -->
 
-## Release
+## Releases and Publishing to npmjs
+
+Using release-it for releases. The build-main github action will create a new patch version on merge to main.
+
+To to a minor (or major) vesion change run
 
 ```
-npm version (major|minor|patch)
+npm run release -- minor --ci
+```
+
+To publish to npmjs run
+
+```
 npm publish
 ```
 
