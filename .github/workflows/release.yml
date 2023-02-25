@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
-    name: Deploy To Production
+    name: Create Github Release
     runs-on: ubuntu-latest
     steps:
       - name: Clone Repository
@@ -28,7 +28,7 @@ jobs:
       - name: Install Node.js dependencies
         run: yarn
 
-      - name: Publish to npmjs
-        run: npm run publish
+      - name: Github release
+        run: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
