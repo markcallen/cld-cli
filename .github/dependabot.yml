@@ -4,13 +4,9 @@ updates:
     versioning-strategy: increase
     directory: '/'
     schedule:
-      interval: 'monthly'
+      interval: 'weekly'
     labels:
       - 'dependencies'
     open-pull-requests-limit: 100
     pull-request-branch-name:
       separator: '-'
-    ignore:
-      - dependency-name: 'fs-extra'
-      - dependency-name: '*'
-        update-types: ['version-update:semver-major']
