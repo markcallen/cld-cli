@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy:
-    if: ${{ github.ref != 'refs/heads/main' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     name: Deploy To Production
     runs-on: ubuntu-latest
     steps:
