@@ -309,7 +309,7 @@ DESCRIPTION
 
 Using release-it for releases.
 
-To do a release run the Github Release workflow on main.
+To do a release run the Github Release workflow on main. Use this action: https://github.com/markcallen/cld-cli/actions/workflows/release.yml and run against the main branch.
 
 To to a minor (or major) vesion change run
 
