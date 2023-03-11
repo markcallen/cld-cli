@@ -34,7 +34,6 @@
     "eslint-config-oclif-typescript": "^1.0.3",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "globby": "^11",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "mocha": "^10",
