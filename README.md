@@ -5,6 +5,7 @@ cld CLI - managing cloud resources from the command-line
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/cld-cli.svg)](https://npmjs.org/package/cld-cli)
 [![build](https://img.shields.io/github/actions/workflow/status/markcallen/cld-cli/build-main.yml)](https://github.com/markcallen/cld-cli/tree/main)
+[![test](https://img.shields.io/github/actions/workflow/status/markcallen/cld-cli/unittest.yaml)](https://github.com/markcallen/cld-cli/tree/main)
 ![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/markcallen/cld-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/cld-cli.svg)](https://npmjs.org/package/cld-cli)
 [![License](https://img.shields.io/npm/l/cld-cli.svg)](https://github.com/markcallen/cld-cli/blob/main/LICENSE)
@@ -25,7 +26,7 @@ $ npm install -g cld-cli
 $ cld COMMAND
 running command...
 $ cld (--version)
-cld-cli/0.3.1 linux-x64 node-v16.13.0
+cld-cli/0.3.11 linux-x64 node-v16.13.0
 $ cld --help [COMMAND]
 USAGE
   $ cld COMMAND
@@ -306,18 +307,14 @@ DESCRIPTION
 
 ## Releases and Publishing to npmjs
 
-Using release-it for releases. The build-main github action will create a new patch version on merge to main.
+Using release-it for releases.
+
+To do a release run the Github Release workflow on main. Use this action: https://github.com/markcallen/cld-cli/actions/workflows/release.yml and run against the main branch.
 
 To to a minor (or major) vesion change run
 
 ```
 npm run release -- minor --ci
-```
-
-To publish to npmjs run
-
-```
-npm publish
 ```
 
 ## Development

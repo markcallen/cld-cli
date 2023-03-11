@@ -1,46 +1,39 @@
 ---
-name: Test
+name: Github Release
 
 on:
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  build:
-    name: Test
+  deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    name: Create Github Release
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-
     steps:
-      - name: Check out Git repository
+      - name: Clone Repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Set up Node.js ${{ matrix.node-version }}
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 18.14.0
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install Node.js dependencies
         run: yarn
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-
-      - name: Run Tests
-        run: npm run test
+      - name: Github release
+        run: npm run release
         env:
-          AWS_SDK_LOAD_CONFIG: 1
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Notify failures
         if: failure()
         uses: rtCamp/action-slack-notify@v2
