@@ -69,7 +69,6 @@
     "prepack": "yarn build && oclif manifest && oclif readme",
     "postpack": "shx rm -f oclif.manifest.json",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "posttest": "yarn lint",
     "version": "oclif readme && git add README.md",
     "lint": "eslint . --ext .ts,.js --config .eslintrc",
     "lint:fix": "eslint . --ext .ts,js --config .eslintrc --fix",
