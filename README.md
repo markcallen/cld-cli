@@ -26,7 +26,7 @@ $ npm install -g cld-cli
 $ cld COMMAND
 running command...
 $ cld (--version)
-cld-cli/0.3.11 linux-x64 node-v16.13.0
+cld-cli/0.3.12 linux-x64 node-v18.14.0
 $ cld --help [COMMAND]
 USAGE
   $ cld COMMAND
@@ -68,7 +68,7 @@ DESCRIPTION
   Display help for cld.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.4/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.8/src/commands/help.ts)_
 
 ## `cld plugins`
 
@@ -88,7 +88,7 @@ EXAMPLES
   $ cld plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.3.0/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.3.2/src/commands/plugins/index.ts)_
 
 ## `cld plugins:install PLUGIN...`
 
