@@ -38,7 +38,7 @@
     "lint-staged": "^13.1.2",
     "mocha": "^10",
     "oclif": "^3",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.5",
     "release-it": "^15.6.0",
     "shx": "^0.3.3",
     "ts-node": "^10.9.1",
