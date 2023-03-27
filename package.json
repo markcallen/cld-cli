@@ -17,7 +17,7 @@
     "/oclif.manifest.json"
   ],
   "dependencies": {
-    "@oclif/core": "^1.26.2",
+    "@oclif/core": "^2.7.1",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.3.2",
     "aws-sdk": "^2.1311.0",
