@@ -93,5 +93,8 @@
     "*.{json,md}": [
       "prettier --config .prettierrc --write ."
     ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
