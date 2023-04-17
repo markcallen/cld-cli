@@ -1,8 +1,0 @@
-{
-  "plugins": ["prettier"],
-  "extends": ["oclif", "oclif-typescript", "prettier"],
-  "rules": {
-    "no-console": "warn",
-    "prettier/prettier": "error"
-  }
-}

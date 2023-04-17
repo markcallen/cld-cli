@@ -28,12 +28,14 @@
     "@types/chai": "^4",
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.14.1",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
     "chai": "^4",
     "eslint": "8.38.0",
     "eslint-config-oclif": "^4",
     "eslint-config-oclif-typescript": "^1.0.3",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^46.0.0",
     "husky": "^8.0.3",
     "lint-staged": "13.2.1",
     "mocha": "^10",
@@ -69,10 +71,10 @@
     "postpack": "shx rm -f oclif.manifest.json",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
-    "lint": "eslint . --ext .ts,.js --config .eslintrc",
-    "lint:fix": "eslint . --ext .ts,js --config .eslintrc --fix",
-    "prettier": "npx prettier --config .prettierrc --check .",
-    "prettier:fix": "npx prettier --config .prettierrc --write .",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,js --fix",
+    "prettier": "npx prettier --check .",
+    "prettier:fix": "npx prettier --write .",
     "release": "release-it",
     "prepare": "husky install"
   },
@@ -88,10 +90,10 @@
   "lint-staged": {
     "*.{js,ts}": [
       "prettier --write .",
-      "eslint --config .eslintrc --fix . "
+      "eslint --fix . "
     ],
     "*.{json,md,yaml}": [
-      "prettier --config .prettierrc --write ."
+      "prettier --write ."
     ]
   },
   "publishConfig": {
