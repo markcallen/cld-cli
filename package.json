@@ -90,7 +90,7 @@
       "prettier --write .",
       "eslint --config .eslintrc --fix . "
     ],
-    "*.{json,md}": [
+    "*.{json,md,yaml}": [
       "prettier --config .prettierrc --write ."
     ]
   },
