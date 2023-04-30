@@ -1,4 +1,4 @@
-const path = require('path'); // eslint-disable unicorn/prefer-module
+const path = require('node:path'); // eslint-disable unicorn/prefer-module
 
 process.env.TS_NODE_PROJECT = path.resolve('test/tsconfig.json');
 process.env.NODE_ENV = 'development';
