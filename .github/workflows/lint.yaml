@@ -20,9 +20,11 @@ jobs:
         with:
           node-version: 18.14.0
 
-      # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
-        run: cd ${{ github.workspace }} && yarn
+        run: yarn
+
+      - name: yarn lint
+        run: yarn lint
 
       - name: Run linters
         uses: wearerequired/lint-action@v2
