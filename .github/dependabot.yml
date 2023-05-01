@@ -11,5 +11,5 @@ updates:
     pull-request-branch-name:
       separator: '-'
     ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
