@@ -1,6 +1,6 @@
 {
   "name": "cld-cli",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "description": "cld CLI - for the cld packages",
   "author": "Mark C Allen @markcallen",
   "bin": {
