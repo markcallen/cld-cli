@@ -349,6 +349,6 @@ Distributed under the Apache-2.0 License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@markcallen](https://www.linkedin.com/in/markcallen/)
+Mark C Allen - [@markcallen](https://www.linkedin.com/in/markcallen/)
 
 Project Link: [https://github.com/markcallen/cld-cli](https://github.com/markcallen/cld-cli)
