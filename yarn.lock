@@ -558,7 +558,7 @@
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^2.4.0", "@oclif/core@^2.6.2", "@oclif/core@^2.8.11", "@oclif/core@^2.8.2", "@oclif/core@^2.8.4", "@oclif/core@^2.8.7":
+"@oclif/core@^2.4.0", "@oclif/core@^2.6.2", "@oclif/core@^2.8.11", "@oclif/core@^2.8.2", "@oclif/core@^2.8.4":
   version "2.8.11"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.8.11.tgz#fbdf8b5b74a8b2012f2fcd5a30a515d327b54482"
   integrity sha512-9wYW6KRSWfB/D+tqeyl/jxmEz/xPXkFJGVWfKaptqHz6FPWNJREjAM945MuJL2Y8NRhMe+ScRlZ3WpdToX5aVQ==
@@ -1002,10 +1002,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
-"@types/mocha@^10.0.1":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.1.tgz#2f4f65bb08bc368ac39c96da7b2f09140b26851b"
-  integrity sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==
+"@types/mocha@^10.0.2":
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-10.0.2.tgz#96d63314255540a36bf24da094cce7a13668d73b"
+  integrity sha512-NaHL0+0lLNhX6d9rs+NSt97WH/gIlRHmszXbQ/8/MV/eVcFNdeJ/GYhrFuUc8K7WuPhRhTSdMkCp8VMzhUq85w==
 
 "@types/node@*", "@types/node@^18.16.18":
   version "18.16.18"
